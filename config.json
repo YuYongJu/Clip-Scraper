@@ -1,0 +1,28 @@
+{
+    "sources": [
+        {
+            "name": "sakugabooru",
+            "base_url": "https://www.sakugabooru.com/post?tags=animated",
+            "page_param": "page={}",
+            "clip_selector": "article.post-preview",
+            "link_selector": "a.directlink",
+            "next_page_selector": "a.next_page",
+            "max_pages": 3
+        },
+        {
+            "name": "animeclips_reddit",
+            "base_url": "https://www.reddit.com/r/animegifs/hot/.json",
+            "is_api": true,
+            "max_items": 20
+        }
+    ],
+    "download_limit": 10,
+    "min_delay": 1,
+    "max_delay": 3,
+    "categories": [
+        "action",
+        "fight",
+        "emotional",
+        "comedy"
+    ]
+}
